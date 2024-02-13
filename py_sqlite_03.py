@@ -3,7 +3,7 @@ import sqlite3
 database_name = 'tvrtka.db'
 insert_into_table_query = '''
     INSERT INTO employees (last_name, first_name, email)
-    VALUES  (?, ?, ?)
+    VALUES  (?, ?, ?);
 '''
 
 employees = [
