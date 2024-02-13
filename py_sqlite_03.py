@@ -7,10 +7,10 @@ insert_into_table_query = '''
 '''
 
 employees = [
-    ('Peric', 'Pero', 'pero.peric@email.com'),
-    ('Anic', 'Ana', 'ana.anic@email.com'),
-    ('Ivic', 'Iva', 'iva.ivic@email.com'),
-    ('Maric', 'Marko', 'marko.maric@email.com')
+    ('Maric', 'Marko', 'marko1.maric@email.com'),
+    ('Peric', 'Pero', 'pero1.peric@email.com'),
+    ('Anic', 'Ana', 'ana1.anic@email.com'),
+    ('Ivic', 'Iva', 'iva1.ivic@email.com')
 ]
 
 
@@ -19,7 +19,7 @@ try:
     cursor = sqlite_connection.cursor()
 
     for employee in employees:
-        cursor.execute(insert_into_table_query, employee)    
+        cursor.execute(insert_into_table_query, employee)
     
     # COMMIT Stvarna pohrana izmjena stanja podataka u bazi
     sqlite_connection.commit()
